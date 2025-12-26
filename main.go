@@ -36,6 +36,7 @@ func main() {
 			resultFiles.Junit = append(resultFiles.Junit, path)
 		}
 		if d.Name() == "coverage.dat" {
+			fmt.Println("Get coverage file: ", path)
 			resultFiles.Coverage = append(resultFiles.Coverage, path)
 		}
 		return nil
